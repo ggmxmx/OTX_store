@@ -1,0 +1,29 @@
+import image1 from './100.jpg';
+import image2 from './111.jpg';
+import image3 from './M A+ (1).jpg';
+import image4 from './M A+ (2).jpg';
+import image5 from './M A+ (3).jpg';
+import image6 from './M A+ (4).jpg';
+import image7 from './M A+ (5).jpg';
+import image8 from './M A+ (6).jpg';
+import image9 from './M A+ (7).jpg';
+import image10 from './main (1).jpg';
+import image11 from './main (2).jpg';
+import image12 from './main (3).jpg';
+import image13 from './main (4).jpg';
+import image14 from './main (5).jpg';
+import image15 from './main (6).jpg';
+import image16 from './main (7).jpg';
+import image17 from './main (8).jpg';
+import image18 from './main (9).jpg';
+import image19 from './P A+ (1).jpg';
+import image20 from './P A+ (2).jpg';
+import image21 from './P A+ (3).jpg';
+import image22 from './P A+ (4).jpg';
+import image23 from './P A+ (5).jpg';
+import image24 from './P A+ (6).jpg';
+import image25 from './P A+ (7).jpg';
+
+const MKstar75WImages = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, image24, image25];
+
+export default MKstar75WImages;

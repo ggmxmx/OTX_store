@@ -3,17 +3,14 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import ItemContainer from './itemContainer.jsx';
 import { useEffect } from 'react';
-import unnamed from './unnamed.jpg';
+
 import CartPage from './pages/cartPage'; // Import your CartPage component
 import items from './items'; // Import the items array
+import Home from './pages/home';
+import ProductView from './pages/productView';
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-
-
-
 
 function App() {
   useEffect(() => {
@@ -37,24 +34,9 @@ function App() {
           </div>
           
           <Routes>
-            <Route path="/" element={
-              <>
-                <div className='banner'>
-                  <img src={unnamed} className='image' alt="OTX Store Banner"/>
-                </div>
-                <div className='items-container'>
-                  {items.map(item => (
-                    <ItemContainer
-                      key={item.name + item.price}
-                      name={item.name}
-                      price={item.price}
-                      image={item.image}
-                    />
-                  ))}
-                </div>
-              </>
-            } />
+            <Route path="/" element={<Home items={items} />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/product/:id" element={<ProductView />} />
             {/* Add other routes as needed */}
           </Routes>
         </div>

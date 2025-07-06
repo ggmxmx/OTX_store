@@ -8,7 +8,7 @@ const itemContainer = (props) =>{
 
     return (
         <>
-            <Link to={'/product'} className="item-link">
+            <Link to={`/product/${props.id}`} className="item-link">
                 <div className="item-container">
                     <img src={image} alt={name} className="item-image" />
                     <h2 className="item-name">{name}</h2>

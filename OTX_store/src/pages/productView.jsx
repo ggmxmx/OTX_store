@@ -1,15 +1,38 @@
-import react from 'react';
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import items from '../items';
+import Features from '../features';
+import Specification from '../specification'; // Assuming you have a Specification component
+import ImagesSlider from '../imagesSlider'; // Assuming you have an imagesSlider component
+import '../App.css'; // Assuming App.css contains styles for product view
 
-function productScreen(props) {
-    const { name, price, image } = props;
+function ProductView() {
+    const { id } = useParams();
+    const product = items.find(item => item.id === parseInt(id));
+
+    if (!product) {
+        return <div>Product not found</div>;
+    }
+
+    const { name, price, image, features, specification ,showImages} = product;
 
     return (
         <div className="product-screen">
+            <ImagesSlider showImages={showImages} />
             <h1 className="product-name">{name}</h1>
-            <img src={image} alt={name} className="product-image" />
             <p className="product-price">${price}</p>
-            <button className="add-to-cart-button">Add to Cart</button>
+            <button className="add-to-cart-button">Buy</button>
+            <div className="features-container">
+                <h2>Features:</h2>
+                <Features features={features} />
+            </div>
+            <div className="specification-container">
+                <h2>Specifications:</h2>
+                <Specification specification={specification} />
+             </div>
+
+
         </div>
     );
 }
-export default productScreen;
+export default ProductView;
