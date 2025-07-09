@@ -16,12 +16,24 @@ function ProductView() {
 
     const { name, price, image, features, specification ,showImages} = product;
 
+    const addToCart = () => {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const productInCart = cart.find(item => item.id === product.id);
+        if (productInCart) {
+            alert('This product is already in your cart');
+        } else {
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Product added to cart');
+        }
+    };
+
     return (
         <div className="product-screen">
             <ImagesSlider showImages={showImages} />
             <h1 className="product-name">{name}</h1>
             <p className="product-price">${price}</p>
-            <button className="add-to-cart-button">Buy</button>
+            <button className="add-to-cart-button" onClick={addToCart}>Add to cart</button>
             <div className="features-container">
                 <h2>Features:</h2>
                 <Features features={features} />

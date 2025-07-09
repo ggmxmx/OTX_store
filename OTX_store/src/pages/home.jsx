@@ -1,25 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ItemContainer from '../itemContainer.jsx';
-import '../App.css'; // Assuming App.css contains general styles or grid for home
+import '../App.css';
+import Banner from '../Images/banner.jpg';
 
-const Home = ({ items }) => {
-  const [searchTerm, setSearchTerm] = useState('');
-
+const Home = ({ items, searchTerm }) => {
   const filteredItems = items.filter(item =>
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <div className="home-container">
-      <div className="search-bar-container">
-        <input
-          type="text"
-          placeholder="Search for products..."
-          value={searchTerm}
-          onChange={e => setSearchTerm(e.target.value)}
-          className="search-input"
-        />
-      </div>
+  
+        <img src={Banner} alt="Banner" className='banner-image'/>
+
       <div className="products-grid">
         {filteredItems.map((item) => (
           <ItemContainer
