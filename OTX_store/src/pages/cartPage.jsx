@@ -34,16 +34,18 @@ const CartPage = () => {
       <div className="cart-items">
 
         {cartItems.map(item => (
-          <Link to={`/product/${item.id}`} className="cart-item-link" key={item.id}>
+          
           <div key={item.id} className="cart-item">
+            <Link to={`/product/${item.id}`} className="cart-item-link" key={item.id}>
             <img src={item.image} alt={item.name} />
+            </Link>
             <div className="item-details">
               <h2>{item.name}</h2>
               <p>Price: ${item.price}</p>
               <button onClick={() => removeFromCart(item.id)}>Remove</button>
             </div>
           </div>
-          </Link>
+
         ))}
       </div>
     </div>

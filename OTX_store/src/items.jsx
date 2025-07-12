@@ -8,12 +8,14 @@ import fantasyWhite from './Images/fantasy-white.png'
 import fantasyBlack from './Images/Fantasy-black.png';
 import V80 from './Images/mouse-V80.png';
 
+import MKStarImages from './Images/MKstar_folder/MK-star-images.js';
 import FantasyBImages from "./Images/FantasyB_folder/FantasyB.jsx";
 import FantasyWImages from "./Images/FantasyW_folder/FantasyW.jsx";
 import MKstar61BImages from "./Images/MKstar61B_folder/MKstar61B.jsx";
 import MKstar75BImages from "./Images/MKstar75B_folder/MKstar75B.jsx";
 import MKstar75WImages from "./Images/MKstar75W_folder/MKstar75W.jsx";
 import V80Images from "./Images/V80_folder/V80.jsx";
+import MKstar61W from "./Images/MKstar61W_folder/MKstar61W.js";
 
 
 let items = [
@@ -37,8 +39,14 @@ let items = [
       "Interface: USB",
       "Wired cable length: approx. 1.8m (5.9 ft)",
     ],
+    showImages: MKStarImages,
     isOrdered: false
   },
+
+
+
+
+
   {
     id: 2,
     name: "MK Star 61",
@@ -65,6 +73,11 @@ let items = [
     showImages: MKstar61BImages,
     isOrdered: false
   },
+
+
+
+
+
   {
     id: 3,
     name: "MK Star 61",
@@ -88,8 +101,14 @@ let items = [
       "Interface: USB",
       "Wired cable length: approx. 1.5m (4.9 ft)",
     ],
+    showImages: MKstar61W,
     isOrdered: false
   },
+
+
+
+
+
   {
     id: 4,
     name: "MK Star 75",
@@ -117,6 +136,11 @@ let items = [
     showImages: MKstar75BImages,
     isOrdered: false
   },
+
+
+
+
+
   {
     id: 8,
     name: "MK Star 75",
@@ -144,6 +168,11 @@ let items = [
     showImages: MKstar75WImages,
     isOrdered: false
   },
+
+
+
+
+
   {
     id: 5,
     name: "Fantasy microphone",

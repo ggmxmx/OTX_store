@@ -27,3 +27,10 @@ li{
     text-align: center; /* Center the text */
     color: #555; /* Adjust color as needed */
 }
+
+.about-page{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+}

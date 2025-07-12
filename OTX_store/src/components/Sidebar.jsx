@@ -10,19 +10,19 @@ const Sidebar = ({ isSidebarOpen }) => {
         <li>
           <Link to="/">
             <FaHome />
-            <span>Home</span>
+            <span onClick={isSidebarOpen = true}>Home</span>
           </Link>
         </li>
         <li>
           <Link to="/about">
             <FaInfoCircle />
-            <span>About</span>
+            <span onClick={isSidebarOpen = true}>About</span>
           </Link>
         </li>
         <li>
           <Link to="/contact">
             <FaEnvelope />
-            <span>Contact</span>
+            <span onClick={isSidebarOpen = true}>Contact</span>
           </Link>
         </li>
       </ul>

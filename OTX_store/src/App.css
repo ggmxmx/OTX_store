@@ -86,7 +86,7 @@
 .products-grid {
   display: flex;
   justify-content: center;
-  gap:10px 10px;
+  gap:10px 50px;
   flex-wrap: wrap;
   
 }
@@ -326,7 +326,7 @@
 
   .banner-image {
   width: 100%;
-  height: 200px;
+  height: 260px;
   object-fit: contain;
   position: relative;
  margin-top: 15.5px;
@@ -362,11 +362,44 @@
   .banner {
     height: 200px;
   }
-.products-grid{
-    margin-bottom: 100px ;
+.products-grid {
+  display: flex;
+  justify-content: center;
+  gap:10px 35px;
+  flex-wrap: wrap;
+  
+}
+}
+
+@media (max-width: 380px) {
+  .banner-image {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    height: 231px;
+    object-fit: contain;
+    position: relative;
+    margin-top: 15.5px;
   }
+  .products-grid {
+  display: flex;
+  justify-content: center;
+  gap:10px 35px;
+  flex-wrap: wrap;
+  
+}
+}
+@media (max-width: 321px) {
+  .banner-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    position: relative;
+    margin-top: 15.5px;
+  }
+  .products-grid {
+  display: flex;
+  justify-content: center;
+  gap:10px 20px;
+  flex-wrap: wrap;
+  
+}
 }
