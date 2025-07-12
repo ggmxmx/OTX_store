@@ -213,6 +213,16 @@ let items = [
       "Ergonomic design",
       "Three-level"
     ],
+    specification: [
+      "Connection type: 2.4G/BT5.0",
+      "Sensor type: Optical",
+      "DPI: 800/1200/1600",
+      "Number of buttons: 6",
+      "Battery capacity: 500mAh",
+      "Charging time: 2 hours",
+      "Product size: 130 x 70 x 40mm (5.1 x 2.8 x 1.6 in)",
+      "Product weight: 100g (0.22 lbs)",
+    ],
     showImages: V80Images,
     isOrdered: false
   }

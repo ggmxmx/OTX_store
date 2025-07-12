@@ -32,7 +32,7 @@ function App() {
     <Router>
       <div className='body'>
         <Sidebar isSidebarOpen={isSidebarOpen} />
-        <div className={`main-content`}>
+        
           <div className='main'>
             <div className='header'>
               <button className="sidebar-toggle-button" onClick={toggleSidebar}>
@@ -64,7 +64,7 @@ function App() {
               {/* Add other routes as needed */}
             </Routes>
           </div>
-        </div>
+  
       </div>
     </Router>
   );
