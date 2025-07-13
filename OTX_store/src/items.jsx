@@ -22,7 +22,7 @@ let items = [
   {
     id: 1,
     name: "MK Star",
-    price: 59.99,
+    price: `ر.ع ${14.900}`,
     image: MKStar,
     features: ["80% mechanical keyboard with 61 keys",
       "Ergonomic design with OEM profile and 2-level support feet",
@@ -50,7 +50,7 @@ let items = [
   {
     id: 2,
     name: "MK Star 61",
-    price: 29.99,
+    price: `ر.ع ${13.900}`,
     image: MKStar61Black,
     features: [
       "60% mechanical keyboard with 61 keys",
@@ -81,7 +81,7 @@ let items = [
   {
     id: 3,
     name: "MK Star 61",
-    price: 199.99,
+    price: `ر.ع ${13.900}`,
     image: MKStar61White,
     features: [
       "60% mechanical keyboard with 61 keys",
@@ -112,7 +112,7 @@ let items = [
   {
     id: 4,
     name: "MK Star 75",
-    price: 24.99,
+    price: `ر.ع ${14.900}`,
     image: MKStar75Black,
     features: [
       "75% compat mechanical keyboard with 83 keys",
@@ -144,7 +144,7 @@ let items = [
   {
     id: 8,
     name: "MK Star 75",
-    price: 39.99,
+    price:`ر.ع ${14.900}`,
     image: MKStar75White,
     features: [
       "75% compat mechanical keyboard with 83 keys",
@@ -176,7 +176,7 @@ let items = [
   {
     id: 5,
     name: "Fantasy microphone",
-    price: 49.99,
+    price: `ر.ع ${9.900}`,
     image: fantasyWhite,
     features: [
       "Wired USB Microphone",
@@ -205,7 +205,7 @@ let items = [
   {
     id: 6,
     name: "Fantasy microphone",
-    price: 39.99,
+    price: `ر.ع ${9.900}`,
     image: fantasyBlack,
     features: [
       "Wired USB Microphone",
@@ -234,10 +234,10 @@ let items = [
   {
     id: 7,
     name: "V-80 Mouse",
-    price: 14.99,
+    price: `ر.ع ${8.900}`,
     image: V80,
     features: [
-      "Wirless gaming mouse",
+      "",
       "Dual mode connection (2.4G/BT5.0)",
       "Ergonomic design",
       "Three-level"
