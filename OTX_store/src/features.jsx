@@ -3,7 +3,9 @@ function Features({ features }) {
     <ul>
       {features.map((feature, idx) => (
         <li key={idx}>{!feature? "no features" : feature}</li>
+        
       ))}
+      <br />
     </ul>
   );
 }
