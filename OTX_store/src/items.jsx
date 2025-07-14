@@ -214,7 +214,7 @@ let items = [
   },
   {
     id: 7,
-    name: "فأرة V-80",
+    name: "ماوس V-80",
     price: 8.900,
     image: V80,
     features: [
