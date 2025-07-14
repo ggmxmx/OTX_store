@@ -12,7 +12,7 @@ const itemContainer = (props) =>{
                 <div className="item-container">
                     <img src={image} alt={name} className="item-image" />
                     <h2 className="item-name">{name}</h2>
-                    <p className="item-price">${price}</p>
+                    <p className="item-price">ر.ع {price}</p>
                 </div>
             </Link>
         </>

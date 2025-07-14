@@ -32,7 +32,7 @@ function ProductView() {
         <div className="product-screen">
             <ImagesSlider showImages={showImages} />
             <h1 className="product-name">{name}</h1>
-            <p className="product-price">${price}</p>
+            <p className="product-price">ر.ع {price}</p>
             <button className="add-to-cart-button" onClick={addToCart}>Add to cart</button>
             <div className="features-container">
                 <h2>Features:</h2>

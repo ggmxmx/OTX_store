@@ -22,7 +22,7 @@ let items = [
   {
     id: 1,
     name: "MK Star",
-    price: `ر.ع ${14.900}`,
+    price: 14.900,
     image: MKStar,
     features: [
       "كيبورد ميكانيكي بنسبة 80%",
@@ -47,7 +47,7 @@ let items = [
   {
     id: 2,
     name: "MK Star 61",
-    price: `ر.ع ${13.900}`,
+    price:13.900,
     image: MKStar61Black,
     features: [
       "كيبورد ميكانيكي بنسبة 60% مع 61 مفتاح",
@@ -74,7 +74,7 @@ let items = [
   {
     id: 3,
     name: "MK Star 61",
-    price: `ر.ع ${13.900}`,
+    price: 13.900,
     image: MKStar61White,
     features: [
       "كيبورد ميكانيكي بنسبة 60% مع 61 مفتاح",
@@ -101,7 +101,7 @@ let items = [
   {
     id: 4,
     name: "MK Star 75",
-    price: `ر.ع ${14.900}`,
+    price: 14.900,
     image: MKStar75Black,
     features: [
       "كيبورد ميكانيكي بنسبة 75% مع 83 مفتاح",
@@ -129,7 +129,7 @@ let items = [
   {
     id: 8,
     name: "MK Star 75",
-    price: `ر.ع ${14.900}`,
+    price: 14.900,
     image: MKStar75White,
     features: [
       "كيبورد ميكانيكي بنسبة 75% مع 83 مفتاح",
@@ -157,7 +157,7 @@ let items = [
   {
     id: 5,
     name: "ميكروفون فانتسي",
-    price: `ر.ع ${9.900}`,
+    price: 9.900,
     image: fantasyWhite,
     features: [
       "ميكروفون USB سلكي",
@@ -186,7 +186,7 @@ let items = [
   {
     id: 6,
     name: "ميكروفون فانتسي",
-    price: `ر.ع ${9.900}`,
+    price: 9.900,
     image: fantasyBlack,
     features: [
       "ميكروفون USB سلكي",
@@ -215,7 +215,7 @@ let items = [
   {
     id: 7,
     name: "فأرة V-80",
-    price: `ر.ع ${8.900}`,
+    price: 8.900,
     image: V80,
     features: [
       "فارة لا سلكية",
