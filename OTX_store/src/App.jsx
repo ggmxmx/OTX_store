@@ -13,6 +13,7 @@ import ProductView from './pages/productView';
 import Sidebar from './components/Sidebar';
 import AboutPage from './pages/aboutPage';
 import Contacts from './pages/contacts';
+import Checkout from './pages/Checkout'; // Import the Checkout component
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -61,6 +62,7 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/product/:id" element={<ProductView />} />
               <Route path="/contact" element={<Contacts />} />
+              <Route path="/checkout" element={<Checkout />} />
               {/* Add other routes as needed */}
             </Routes>
           </div>

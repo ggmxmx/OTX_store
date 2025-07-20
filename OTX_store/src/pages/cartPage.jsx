@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import imptyCartImage from '../Images/imptyCart.png'; // Placeholder image for empty cart
 import './cart.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -17,20 +18,29 @@ const CartPage = () => {
     localStorage.setItem('cart', JSON.stringify(updatedCart));
   };
 
+  const handleCheckout = () => {
+    const totalAmount = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+    navigate('/checkout', { state: { cartItems, totalAmount } });
+  };
+
   if (cartItems.length === 0) {
     return (
       <div className="cart-page">
         <h1>Shopping Cart</h1>
-        <p>Your cart is currently empty.</p>
-        <p>Start shopping to add items to your cart!</p>
-        <img src={imptyCartImage} alt="Empty Cart" className='empty-cart'/>
+        <>
+          <p>Your cart is currently empty.</p>
+          <p>Start shopping to add items to your cart!</p>
+          <img src={imptyCartImage} alt="Empty Cart" className='empty-cart'/>
+        </>
       </div>
     );
   }
 
   return (
     <div className="cart-page">
-      <h1>Shopping Cart</h1>
+      <h1>سلة المسروقات
+
+      </h1>
       <div className="cart-items">
 
         {cartItems.map(item => (
@@ -47,6 +57,11 @@ const CartPage = () => {
           </div>
 
         ))}
+      </div>
+      <div className="cart-summary">
+        <button onClick={handleCheckout}>
+          Checkout
+        </button>
       </div>
     </div>
   );

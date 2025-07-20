@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  height: 400px;
+  width: 100%;
+  max-width: 250px;
+
+}
+
+.item-container{
+    
+}

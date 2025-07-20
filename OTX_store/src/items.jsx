@@ -156,7 +156,7 @@ let items = [
 
   {
     id: 5,
-    name: "ميكروفون فانتسي",
+    name: "Fantasy microphone",
     price: 9.900,
     image: fantasyWhite,
     features: [
@@ -185,7 +185,7 @@ let items = [
   },
   {
     id: 6,
-    name: "ميكروفون فانتسي",
+    name: "Fantasy microphone",
     price: 9.900,
     image: fantasyBlack,
     features: [
