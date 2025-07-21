@@ -4,7 +4,9 @@ function Contacts() {
   return (
     <>
     <h1>للتواصل معنا:</h1>
+    <a href="https://www.instagram.com/otx.store0/">
     <p>instagram: otx_store</p>
+    </a>
     </>
   );
 }
